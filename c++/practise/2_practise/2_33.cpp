@@ -6,8 +6,13 @@
 #include <iostream>
 using namespace std;
 
+enum Weekday {SUNDAY=7, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY};
+int tamp;
 int main()
 {
+    tamp = FRIDAY;
+    cout<<"变量赋值的结果为:"<<tamp;
+    cout<<endl;
 
     return 0;
 }

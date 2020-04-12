@@ -45,20 +45,21 @@ int main()
     string order;
     cin>>order;
     char result;
-    if (order == "A") 
-        result = 1;
-    else if (order == "D") 
-        result = 2;
-    else if (order == "O") 
-        result = 3;
-    else if (order == "Q") 
-        result = 4;
-    else
-        result = 5;
-    
 
     for (; order != "Q"; )
     {
+        // 数据类型转换
+        if (order == "A") 
+            result = 1;
+        else if (order == "D") 
+            result = 2;
+        else if (order == "O") 
+            result = 3;
+        else if (order == "Q") 
+            result = 4;
+        else
+            result = 5;
+
         switch (result)
         {
         case 1:
