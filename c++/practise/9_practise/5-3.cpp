@@ -13,7 +13,7 @@ void myFunction()
 {
     int y=10;
     cout<<"x from myFunction:"<<x<<"\n";
-    cout<<"y from myFunction:"<<y<<"\n\n";
+    cout<<"y from myFunction:"<<y<<"\n";
 }
 
 int main()

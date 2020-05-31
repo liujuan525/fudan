@@ -4,10 +4,14 @@
  * @Date: 2020-05-24 18:06:20
  */ 
 #include <iostream>
+#include "fn1.h"
 using namespace std;
 
+int n;
 int main()
 {
-
+    n = 20;
+    fn1();
+    cout<<"n 的值为 "<<n<<endl;
     return 0;
 }
