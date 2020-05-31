@@ -1,69 +1,37 @@
 第三章      函数
 
- 
-
 3-1 C++中的函数是什么？什么叫主调函数，什么叫被调函数，二者之间有什么关系？如何调用一个函数？
-
 解：
-
 一个较为复杂的系统往往需要划分为若干子系统，高级语言中的子程序就是用来实现这种模块划分的。C和C++语言中的子程序就体现为函数。调用其它函数的函数被称为主调函数，被其它函数调用的函数称为被调函数。一个函数很可能既调用别的函数又被另外的函数调用，这样它可能在某一个调用与被调用关系中充当主调函数，而在另一个调用与被调用关系中充当被调函数。
 
 调用函数之前先要声明函数原型。按如下形式声明：
-
 类型标识符 被调函数名 (含类型说明的形参表);
 
 声明了函数原型之后，便可以按如下形式调用子函数：
-
 函数名（实参列表）
 
- 
-
 3-2 观察下面程序的运行输出，与你设想的有何不同？仔细体会引用的用法。
-
- 
-
 源程序：
-
 #include <iostream.h>
-
 int main()
-
 {
-
 int intOne;
-
 int &rSomeRef = intOne;
-
 intOne = 5;
-
 cout << "intOne:\t\t" << intOne << endl;
-
 cout << "rSomeRef:\t" << rSomeRef << endl;
-
 int intTwo = 8;
-
 rSomeRef = intTwo; // not what you think!
-
 cout << "\nintOne:\t\t" << intOne << endl;
-
 cout << "intTwo:\t\t" << intTwo << endl;
-
 cout << "rSomeRef:\t" << rSomeRef << endl;
-
 return 0;
-
 }
-
 程序运行输出：
-
 intOne: 5
-
 rSomeRef: 5
-
 intOne: 8
-
 intTwo: 8
-
 rSomeRef: 8
 
 3-3 比较值调用和引用调用的相同点与不同点。
