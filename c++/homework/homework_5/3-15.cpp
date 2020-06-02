@@ -7,3 +7,37 @@
  * @Date: 2020-05-31 19:40:24
  */ 
 #include <iostream>
+#include <cmath>
+using namespace std;
+
+int getPower(int x, int y)
+{
+    if (y < 0)
+    {
+        return 0;
+    } else
+    {
+        return pow(x, y);
+    }
+}
+
+double getPower(double x, int y)
+{
+    return pow(x, y);
+}
+
+int main()
+{
+    int x,m;
+    double y;
+    cout << "请输入一个整数：";
+    cin >> x;
+    cout << "请输入一个实数：";
+    cin >> y;
+    cout << "请输入一个整数：";
+    cin >> m;
+    cout << x << "的" << m << "次幂是：" << getPower(x, m) << endl;
+    cout << y << "的" << m << "次幂是：" << getPower(y, m) << endl;
+
+    return 0;
+}
