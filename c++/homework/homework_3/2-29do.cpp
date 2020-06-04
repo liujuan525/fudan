@@ -8,13 +8,13 @@ using namespace std;
 
 int main()
 {
-    int j, k, flag;
-    int i = 2;
+    int i, j, k, flag;
+    i = 2;
     int num = 0;
     do
     {
         flag = 1;
-        k = sqrt(i);
+        k = i / 2;
         j = 2;
         do
         {
@@ -38,8 +38,4 @@ int main()
 
     return 0;
 }
-
-
-
-
 
