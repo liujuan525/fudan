@@ -26,12 +26,12 @@ int main()
         }
         if (flag)
         {
-            cout << i << "是质数.\n" << endl;
+            cout << i << " is prime number.\n" << endl;
             num++;
         }
         i++;
     }
-    cout << "共 " << num << "个质数." << endl;
+    cout << "There are " << num << " prime numbers." << endl;
 
     return 0;
 }

@@ -23,11 +23,11 @@ int main()
         }
         if (flag)
         {
-            cout << i << "是质数.\n";
+            cout << i << " is prime number.\n";
             N += 1;
         }
     }
-    cout << "共有: " << N << " 个质数。" << endl;
+    cout << "There are " << N << " prime numbers." << endl;
 
     return 0;
 }

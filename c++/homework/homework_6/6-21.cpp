@@ -21,10 +21,9 @@ int count(string &str)
 int main()
 {
     string text;
-    cout << "输入一个英语句子：" << endl;
-    // getline ： 从键盘读入字符串，直到行末为止，不以中间的空格作为输入的分隔符
+    cout << "Please enter an English sentence:" << endl;
     getline(cin, text);
-    cout << "这个句子里有 " << count(text) << " 个 字母。" << endl;
+    cout << "There are " << count(text) << " letters." << endl;
 
     return 0;
 }
