@@ -1,6 +1,5 @@
 /**
  * 课后习题 4.5
- * 此题缺少：画出该类的UML图
  */
 
 public class Stock {
