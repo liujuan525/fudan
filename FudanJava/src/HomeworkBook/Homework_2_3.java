@@ -1,3 +1,5 @@
+package HomeworkBook;
+
 import java.util.Scanner;
 
 public class Homework_2_3 {
