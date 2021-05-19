@@ -4,7 +4,7 @@ package chapter4.practise2;
 public class Circle {
     double centerX;
     double centerY;
-    double radius;
+    public double radius;
 
     public Circle() {
         this(1.0);
